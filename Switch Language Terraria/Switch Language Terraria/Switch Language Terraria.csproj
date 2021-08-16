@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5252E856-B425-45C0-A935-03C2338956FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Switch_Language_Terraria</RootNamespace>
+    <AssemblyName>Switch Language Terraria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon6.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\en\Combat_Crit_en.xnb" />
+    <None Include="Resources\en\Combat_Text_en.xnb" />
+    <None Include="Resources\en\Death_Text_en.xnb" />
+    <None Include="Resources\en\Item_Stack_en.xnb" />
+    <None Include="Resources\en\Logo_en.xnb" />
+    <None Include="Resources\en\Logo2_en.xnb" />
+    <None Include="Resources\en\Logo3_en.xnb" />
+    <None Include="Resources\en\Logo4_en.xnb" />
+    <None Include="Resources\en\Mouse_Text_en.xnb" />
+    <None Include="Resources\en\Splash_1_en.xnb" />
+    <None Include="Resources\en\Splash_1_0_en.xnb" />
+    <None Include="Resources\en\Splash_2_0_en.xnb" />
+    <None Include="Resources\en\Splash_3_0_en.xnb" />
+    <None Include="Resources\en\Splash_4_0_en.xnb" />
+    <None Include="Resources\en\Splash_5_0_en.xnb" />
+    <None Include="Resources\en\Splash_6_0_en.xnb" />
+    <None Include="Resources\en\Splash_7_0_en.xnb" />
+    <None Include="Resources\en\Splash_8_0_en.xnb" />
+    <None Include="Resources\en\Splash_9_0_en.xnb" />
+    <None Include="Resources\vi\Combat_Crit.xnb" />
+    <None Include="Resources\vi\Combat_Text.xnb" />
+    <None Include="Resources\vi\Death_Text.xnb" />
+    <None Include="Resources\vi\Item_Stack.xnb" />
+    <None Include="Resources\vi\Logo.xnb" />
+    <None Include="Resources\vi\Logo2.xnb" />
+    <None Include="Resources\vi\Logo3.xnb" />
+    <None Include="Resources\vi\Logo4.xnb" />
+    <None Include="Resources\vi\Mouse_Text.xnb" />
+    <None Include="Resources\vi\Splash_1.xnb" />
+    <None Include="Resources\vi\Splash_1_0.xnb" />
+    <None Include="Resources\vi\Splash_2_0.xnb" />
+    <None Include="Resources\vi\Splash_3_0.xnb" />
+    <None Include="Resources\vi\Splash_4_0.xnb" />
+    <None Include="Resources\vi\Splash_5_0.xnb" />
+    <None Include="Resources\vi\Splash_6_0.xnb" />
+    <None Include="Resources\vi\Splash_7_0.xnb" />
+    <None Include="Resources\vi\Splash_8_0.xnb" />
+    <None Include="Resources\vi\Splash_9_0.xnb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon6.ico" />
+    <None Include="Resources\en\TerrariaServer_en.exe" />
+    <None Include="Resources\en\Terraria_en.exe" />
+    <None Include="Resources\vi\TerrariaServer_cr.exe" />
+    <None Include="Resources\vi\Terraria_cr.exe" />
+    <None Include="Resources\en\TerrariaServer_en_cr.exe" />
+    <None Include="Resources\en\Terraria_en_cr.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vi\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vi\Terraria.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vi\TerrariaServer.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
